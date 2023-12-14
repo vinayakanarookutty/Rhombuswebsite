@@ -6,7 +6,7 @@ function App() {
     <>
      <div style={{ maxHeight: "100vh" }}>
 
-     <h1>€Arjun vayalar</h1>
+     <h1>Mentor Menteeee</h1>
     </div>
     
     </>
