@@ -1,0 +1,283 @@
+@font-face {
+    font-family: 'Yu Gothic';
+    src: url('../fonts/YuGothic.eot');
+    src: url('../fonts/YuGothic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/YuGothic.woff2') format('woff2'),
+        url('../fonts/YuGothic.woff') format('woff'),
+        url('../fonts/YuGothic.ttf') format('truetype'),
+        /* url('../fonts/YuGothic.svg#YuGothic') format('svg'); */
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+:root{
+    --bs-dark:#000;
+    --bs-sceondary-color: #999;
+    --bs-brown :#C5A47E;
+}
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    padding: 0;
+    font-family: 'Yu Gothic';
+    background-color: var(--bs-dark);
+}
+h1{
+    text-transform: uppercase;
+}
+
+h2{
+    font-weight: bold;
+    color: var(--bs-white);
+    text-transform: uppercase;
+}
+h3{
+    color: var(--bs-white);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+h4{
+    color: var(--bs-white);
+}
+h6, p{
+    color: var(--bs-sceondary-color);
+    font-weight: 400;
+}
+
+
+#custom-nav{
+    background-color: var(--bs-dark);
+    font-family: 'Yu Gothic';
+    line-height: 2.6rem;
+    box-shadow: rgba(255, 255, 255, 0.24) 0px 3px 8px;
+}
+#custom-nav .nav-link{
+    color: var(--bs-white);
+}
+#custom-nav .nav-link:hover{
+    color: var(--bs-white);
+}
+#custom-nav  .nav-item{
+    padding-left: 1rem;
+}
+.navbar-toggler{
+    border-color: #fff;
+}
+.navbar-toggler-icon{
+    background-image: url(../img/toggle-icon.svg);
+}
+
+
+/*================================== custom-nav css colse ================================== */
+
+.banner-content, .inner-banner-content{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    text-align: left;
+    height: 700px;
+    font-weight: bold;
+}
+.inner-banner-content{
+    align-items: center;
+    text-align: center;
+}
+.banner-content h1{
+    font-size: 3.5rem;
+    font-weight: bolder;
+}
+
+.banner-content p{
+    line-height: 32px;
+    color: var(--bs-white);
+}
+
+#banner .btn-primary{
+    background-color: transparent;
+    border-color: var(--bs-white);
+    --bs-btn-padding-y: 1rem;
+    --bs-btn-padding-x: 1rem;
+}
+.carousel-indicators{
+    right: inherit;
+}
+.carousel-indicators [data-bs-target]{
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+}
+#project-section .project{
+        position: relative;
+    }
+#project-section .tag{
+    position: absolute;
+    top: 0.6rem;
+    color: #fff;
+    font-weight: 700;
+    background: rgba(1, 1, 1, 0.75);
+    right: 0.6rem;
+    padding: 0.6rem;
+}
+#project-section .project-box, #project-section .project-box-left{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#project-section .project-box-left{
+    width: 50%;
+}
+
+#project-section .project-box .btn-link,
+#project-section .project-box-left .btn-link{
+    color: #C5A47E;
+    display: flex;
+    padding-left: 0;
+}
+
+
+#services-section .services-list dd{
+    color: var(--bs-white);
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+#services-section .btn-primary,
+#lets-discuss .btn-primary,
+#get-in-touch .contact-form .btn-primary{
+    background-color: var(--bs-brown);
+    border-color: transparent;
+    line-height: 2rem;
+}
+
+#lets-discuss{
+    background-image: url(../img/lets-discuss.png);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin-top: 5rem;
+}
+#lets-discuss .form-control,
+#get-in-touch .form-control{
+    background-color: transparent;
+    border-top: 0;
+    border-bottom: 1px solid var(--bs-white);
+    border-left: 0;
+    border-right: 0;
+    border-radius:0;
+    color: var(--bs-white);
+}
+#lets-discuss .form-control:focus,
+#get-in-touch .form-control:focus{
+    box-shadow: none;
+}
+::-webkit-input-placeholder { /* Chrome */
+  color: var(--bs-white) !important;
+}
+#lets-discuss h2{
+    color: var(--bs-brown);
+}
+#lets-discuss h6{
+    color: var(--bs-white);
+}
+#get-in-touch .form-control::-webkit-input-placeholder { /* Chrome */
+  color: var(--bs-white) !important;
+  opacity: 0.5 !important;
+}
+footer{
+    color: #999999;
+    padding: 2.5rem 0 0.5rem 0;
+}
+footer p{
+    font-weight: 700;
+}
+footer .contact span,
+#get-in-touch .contact span{
+    margin-right: 1rem;
+}
+
+footer h4,
+#get-in-touch h4{
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/************************************* Media queries Section ****************************************/
+/*==================================================================================================*/
+
+
+@media (max-width: 1400px) {
+    .banner-content{
+        height: 400px;
+   }
+}
+
+@media (max-width: 1200px) {
+    .banner-content h1{
+        font-size: 2.5rem;
+   }
+    .banner-content{
+        height: 300px;
+   }
+}
+
+@media (max-width: 992px) {
+    .banner-content p{
+        padding:0.7rem;
+   }
+}
+@media (max-width: 768px) {
+    .banner-content{
+        height: 250px;
+   }
+    #project-section .project-box-left{
+        width: auto;
+   }
+
+}
+
+
+
+@media (max-width: 576px) {
+
+    #custom-nav .navbar-brand{
+        width: 50%;
+   }
+    #custom-nav .nav-logo{
+        width: 100%;
+   }
+   /*-----------------------------------------------------------*/
+    .banner-content{
+        height: 80px;
+   }
+   #banner .btn-primary {
+    --bs-btn-padding-y: 0.6rem;
+    --bs-btn-padding-x: 0.6rem;
+}
+    .banner-content h1{
+        font-size: 1.2rem;
+   }
+
+}
